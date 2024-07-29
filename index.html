@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Based Environmental Impact Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="backdrop"></div>
+    <div class="container"><h2>AI-based Environmental Impact Tracker</h2>
+        <form id="tracker-form">
+            <div class="form-group">
+                <label for="electricity">Electricity Usage (kWh):</label><input type="number" id="electricity" required>
+            </div>
+            <div class="form-group">
+                <label for="water">Water Usage (liters):</label><input type="number" id="water" required>
+            </div>
+            <div class="form-group">
+                <label for="waste">Waste Production (kg):</label><input type="number" id="waste" required>
+            </div>
+            <button style="--content: 'Calculate!';"><div class="left"></div>Calculate!<div class="right"></div></button>
+        </form>
+        <div id="result" class="hidden"><h2>Environmental Impact</h2><p id="impact"></p>
+            <h2>Recommendations</h2><ul id="recommendations" style="padding-left: 16px;"></ul> </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
